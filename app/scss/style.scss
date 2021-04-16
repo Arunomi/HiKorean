@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&family=Pangolin&display=swap");
+//font-family: 'Jost', sans-serif;
+//font-family: 'Pangolin', cursive;
+$main-color: #5fe9ca;
+
+body {
+    // padding-top: 100px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+}
+
+.header__top-bar {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    padding: 0 15px;
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Pangolin", cursive;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.top-bar {
+    &__logo {
+        img {
+            height: 50px;
+            min-width: 250px;
+        }
+    }
+    &__sections {
+        max-width: 405px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+        margin-right: auto;
+    }
+    &__section {
+        font-size: 32px;
+        transition: color 0.25s, border 0.1s;
+        &--active {
+            color: $main-color;
+            border-bottom: 3px solid $main-color;
+        }
+        &:hover {
+            color: $main-color;
+            border-bottom: 3px solid $main-color;
+            cursor: pointer;
+        }
+        & + & {
+            margin-left: 30px;
+        }
+    }
+    &__contacts {
+        font-size: 18px;
+        // margin-right: 80px;
+        max-width: 350px;
+        margin: 0 auto 0 20px;
+        a:hover {
+            color: $main-color;
+            transition: 0.25s;
+        }
+    }
+    &__phone {
+        margin-right: 30px;
+    }
+    &__media {
+        display: flex;
+        margin-right: 30px;
+        margin-left: 15px;
+        a {
+            min-width: 50px;
+        }
+        &-icon + &-icon {
+            margin-left: 15px;
+        }
+    }
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__btn {
+        padding: 10px 35px;
+        min-width: 200px;
+        border-radius: 30px;
+        border: 3px solid black;
+        text-transform: uppercase;
+    }
+    &__contact-us-btn:hover {
+        background-color: $main-color;
+        transition: 00.25s;
+    }
+    &__login-btn {
+        padding: 10px 16px;
+        margin-left: 30px;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        &:hover {
+            background-color: $main-color;
+            color: black;
+            transition: 00.25s;
+        }
+    }
+}
+
+.header__main {
+    height: 1028px;
+    background-image: url(../images/bg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.main {
+    &__inner {
+        position: relative;
+    }
+    &__frame {
+        width: 100%;
+        height: 670px;
+        position: absolute;
+        border: 10px solid white;
+        top: 240px;
+    }
+    &__man {
+        position: absolute;
+        padding: 0 50%;
+    }
+}
