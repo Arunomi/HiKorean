@@ -15,7 +15,13 @@
     <header class="header">
         <div class="header__top-bar">
             <a class="top-bar__logo" href="#"> <img src="/images/main-logo-black.png" alt=""></a>
-            <div class="top-bar__sections">
+            <div id="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="top-bar__sections top-bar__sections--active">
                 <a class="top-bar__section top-bar__section--active" href="#">Главная</a>
                 <a class="top-bar__section" href="#">Курсы</a>
                 <a class="top-bar__section" href="#">Материалы</a>
@@ -30,7 +36,29 @@
                 <a href="" class="top-bar__media-icon"><img src="images/icons/instagram.svg" alt=""></a>
             </div>
             <div class="top-bar__buttons">
-                <a href="#" class="top-bar__btn top-bar__contact-us-btn">Написать нам</a>
+                <a class="btn btn-primary top-bar__btn top-bar__contact-us-btn" data-fancybox data-src="#modal"
+                    href="javascript:;">Написать нам</a>
+                <form style="display: none;" id="modal" class="write__form" action="" method="">
+                    <ul>
+                        <li>
+                            <input class="write__form-item" placeholder="Ваш e-mail" type="email" id="mail"
+                                name="user_mail">
+                        </li>
+                        <li>
+                            <input class="write__form-item" placeholder="Ваше имя" type="text" id="name"
+                                name="user_name">
+                        </li>
+                        <li>
+                            <textarea class="write__form-item" rows="1" placeholder="Ваше сообщение" id="msg"
+                                name="user_message"></textarea>
+                        </li>
+                        <li>
+                            <button class="write__btn" type="submit">Отправить</button>
+                        </li>
+                    </ul>
+                    <div class="write__rights">Нажимая на кнопку, вы даете согласие на обработку персональных данных
+                    </div>
+                </form>
                 <a href="#" class="top-bar__btn top-bar__login-btn">Вход&nbsp;для&nbsp;учеников</a>
             </div>
         </div>
@@ -47,16 +75,20 @@
     <main class="about">
         <div class="container">
             <div class="about__inner">
+                <div class="about__media">
+                    <a href="" class="about__media-icon"><img src="images/icons/telegram.svg" alt=""></a>
+                    <a href="" class="about__media-icon"><img src="images/icons/youtube.svg" alt=""></a>
+                    <a href="" class="about__media-icon"><img src="images/icons/instagram.svg" alt=""></a>
+                </div>
                 <h1 class="about__name">Антон Разрухин</h1>
                 <h2 class="about__title">Основатель школы корейского языка <strong>HiKorean</strong></h2>
                 <p class="about__text">В 2015 году я переехал в Корею и испытал на себе все трудности преодоления
-                    языкового барьера, <br> несмотря на то, что учу корейский с 2008 года.</p>
+                    языкового барьера, несмотря на то, что учу корейский с 2008 года.</p>
                 <p class="about__text">В сентябре 2019 я запустил свой проект <strong>HiKorean</strong>, чтобы помогать
-                    людям в изучении
-                    корейского языка. <br>
+                    людям в изучении корейского языка. <br>
                     За первые полгода я научил более 1000 человек говорить на корейском.</p>
                 <p class="about__text">Сейчас я спокойно общаюсь с носителями языка, употребляю сленговые выражения и
-                    знаю, <br> как научить этому вас.</p>
+                    знаю, как научить этому вас.</p>
                 <p class="about__text">Если ты пришел за современным корейским - добро пожаловать в
                     <strong>HiKorean</strong>!
                 </p>
@@ -138,8 +170,8 @@
                     <div class="new__right">
                         <div class="new__title">Старт новых потоков - 14 апреля!</div>
                         <div class="new__buttons">
-                            <a href="#" class="new__btn">Грамматический курс <br> для начинающих</a>
-                            <a href="#" class="new__btn">Разговорный курс <br> для начинающих</a>
+                            <a href="#" class="new__btn">Грамматический&nbsp;курс для&nbsp;начинающих</a>
+                            <a href="#" class="new__btn">Разговорный&nbsp;курс для&nbsp;начинающих</a>
                         </div>
                     </div>
                 </div>
@@ -172,9 +204,9 @@
         </div>
     </section>
     <section class="insta">
-        <div class="insta__text">Подписывайтесь на мой канал в Instagram</div>
+        <div class="insta__text">Подписывайтесь на&nbsp;мой профиль в&nbsp;Instagram</div>
         <div class="insta__btn-wrapper">
-            <a href="#" class="insta__btn">Перейти в профиль @HiKorean в Instagram</a>
+            <a href="#" class="insta__btn">Перейти в&nbsp;профиль @HiKorean в&nbsp;Instagram</a>
         </div>
     </section>
     <section class="youtube">
@@ -191,10 +223,8 @@
                         жизни.</div>
                 </div>
                 <div class="youtube__right">
-                    <div class="youtube__title">Канал <br>
-                        Антона Разрухина <br>
-                        на Youtube</div>
-                    <a href="#" class="youtube__btn button">Перейти на Youtube</a>
+                    <div class="youtube__title">Канал Антона&nbsp;Разрухина на&nbsp;Youtube
+                    <a href="#" class="youtube__btn button">Перейти&nbsp;на&nbsp;Youtube</a>
                 </div>
             </div>
         </div>
@@ -227,7 +257,7 @@
                                 </li>
                             </ul>
                         </form>
-                        <div class="write__rights">Нажимая на кнопку, вы даете согласие на обработку персональных данных
+                        <div class="write__rights">Нажимая на&nbsp;кнопку, вы даете согласие на&nbsp;обработку персональных данных
                         </div>
                     </div>
                 </div>
@@ -244,13 +274,13 @@
                     <div class="footer__file">
                         Разрухин Антон Иванович <br>
                         Регистрационный номер: 51824512143 <br>
-                       <a href="#">Договор-оферта</a> 
+                        <a href="#">Договор-оферта</a>
                     </div>
                 </div>
                 <div class="footer__right">
                     <div class="footer__contacts-title">Контакты:</div>
                     <a href="mailto: info@hikorean.kp" class="footer__contacts-email">E-mail: info@hikorean.kp</a>
-                    <a href="tel: +56 729 567 214 129" class="footer__contacts-phone">WhatsApp: +56 729 567 214 129</a>
+                    <a href="tel: +56 729 567 214 129" class="footer__contacts-phone">WhatsApp: +56&nbsp;729&nbsp;567&nbsp;214&nbsp;129</a>
                 </div>
             </div>
             <div class="footer__bottom">
