@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>HiKorean</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top-bar">
+            <a class="top-bar__logo" href="#"> <img src="/images/main-logo-black.png" alt=""></a>
+            <div id="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="top-bar__sections top-bar__sections--active">
+                <a class="top-bar__section top-bar__section--active" href="#">Главная</a>
+                <a class="top-bar__section" href="#">Курсы</a>
+                <a class="top-bar__section" href="#">Материалы</a>
+            </div>
+            <div class="top-bar__contacts">
+                <a href="tel: +56729567214129" class="top-bar__phone">+56729567214129</a>
+                <a href="mailto: info@hikorean.kp" class="top-bar__mail">info@hikorean.kp</a>
+            </div>
+            <div class="top-bar__media">
+                <a href="" class="top-bar__media-icon"><img src="images/icons/telegram.svg" alt=""></a>
+                <a href="" class="top-bar__media-icon"><img src="images/icons/youtube.svg" alt=""></a>
+                <a href="" class="top-bar__media-icon"><img src="images/icons/instagram.svg" alt=""></a>
+            </div>
+            <div class="top-bar__buttons">
+                <a class="btn btn-primary top-bar__btn top-bar__contact-us-btn" data-fancybox data-src="#modal"
+                    href="javascript:;">Написать нам</a>
+                <form style="display: none;" id="modal" class="write__form" action="" method="">
+                    <ul>
+                        <li>
+                            <input class="write__form-item" placeholder="Ваш e-mail" type="email" id="mail"
+                                name="user_mail">
+                        </li>
+                        <li>
+                            <input class="write__form-item" placeholder="Ваше имя" type="text" id="name"
+                                name="user_name">
+                        </li>
+                        <li>
+                            <textarea class="write__form-item" rows="1" placeholder="Ваше сообщение" id="msg"
+                                name="user_message"></textarea>
+                        </li>
+                        <li>
+                            <button class="write__btn" type="submit">Отправить</button>
+                        </li>
+                    </ul>
+                    <div class="write__rights">Нажимая на кнопку, вы даете согласие на обработку персональных данных
+                    </div>
+                </form>
+                <a href="#" class="top-bar__btn top-bar__login-btn">Вход&nbsp;для&nbsp;учеников</a>
+            </div>
+        </div>
+        <div class="header__main">
+            <div class="container">
+                <div class="header__main-inner">
+                    <div class="main__frame"></div>
+                    <div class="main__man"></div>
+                    <img class="main__logo" src="images/main-logo.png">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="about">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__media">
+                    <a href="" class="about__media-icon"><img src="images/icons/telegram.svg" alt=""></a>
+                    <a href="" class="about__media-icon"><img src="images/icons/youtube.svg" alt=""></a>
+                    <a href="" class="about__media-icon"><img src="images/icons/instagram.svg" alt=""></a>
+                </div>
+                <h1 class="about__name">Антон Разрухин</h1>
+                <h2 class="about__title">Основатель школы корейского языка <strong>HiKorean</strong></h2>
+                <p class="about__text">В 2015 году я переехал в Корею и испытал на себе все трудности преодоления
+                    языкового барьера, несмотря на то, что учу корейский с 2008 года.</p>
+                <p class="about__text">В сентябре 2019 я запустил свой проект <strong>HiKorean</strong>, чтобы помогать
+                    людям в изучении корейского языка. <br>
+                    За первые полгода я научил более 1000 человек говорить на корейском.</p>
+                <p class="about__text">Сейчас я спокойно общаюсь с носителями языка, употребляю сленговые выражения и
+                    знаю, как научить этому вас.</p>
+                <p class="about__text">Если ты пришел за современным корейским - добро пожаловать в
+                    <strong>HiKorean</strong>!
+                </p>
+            </div>
+        </div>
+    </main>
+    <section class="modules">
+        <div class="container">
+            <div class="modules__inner">
+                <div class="modules__title">Курсы</div>
+                <div class="modules__item-list">
+                    <div class="modules__item">
+                        <img src="images/base-gram.jpg" alt="" class="modules__item-img">
+                        <h3 class="modules__item-name">Базовый грамматический курс для начинающих</h3>
+                        <div class="modules__item-description">Вся базовая грамматика корейского языка в&nbsp;одном
+                            курсе: с
+                            нуля и&nbsp;до&nbsp;уровня А2. Курс включает также 2&nbsp;экзамена (в&nbsp;форме
+                            тестирования)&nbsp;&mdash; промежуточное и
+                            итоговое. </div>
+                        <div class="modules__item-duration">17 Уроков (20-30 минут каждый) + домашние задания с ключами
+                        </div>
+                        <div class="modules__item-level">Уровень А1-А2</div>
+                        <a href="#" class="modules__item-more">Узнать подробнее → </a>
+                    </div>
+                    <div class="modules__item">
+                        <img src="images/base-speak.jpg" alt="" class="modules__item-img">
+                        <h3 class="modules__item-name">Разговорный курс
+                            для начинающих</h3>
+                        <div class="modules__item-description">Курс для тех, кто хочет преодолеть языковой барьер
+                            и&nbsp;начать говорить на&nbsp;немецком. Каждый
+                            урок включает в&nbsp;себя 3&nbsp;блока: лексика (базовые темы) + грамматика + практика.
+                        </div>
+                        <div class="modules__item-duration">5 видео-уроков (50-90 мин каждый) + домашние задания с
+                            проверкой
+                        </div>
+                        <div class="modules__item-level">Уровень А1-B1</div>
+                        <a href="#" class="modules__item-more">Узнать подробнее → </a>
+                    </div>
+                    <div class="modules__item">
+                        <img src="images/base-times.jpg" alt="" class="modules__item-img">
+                        <h3 class="modules__item-name">Все времена + модальные глаголы</h3>
+                        <div class="modules__item-description">2&nbsp;важнейшие темы, составляющие основу немецкой
+                            грамматики. Полный разбор всех времен, модальных глаголов, а&nbsp;также особенностей их
+                            употребления в&nbsp;речи.
+                        </div>
+                        <div class="modules__item-duration">16 видео-уроков (30-50 мин каждый) + домашние задания с
+                            ключами
+                        </div>
+                        <div class="modules__item-level">Уровень А1-B1</div>
+                        <a href="#" class="modules__item-more">Узнать подробнее → </a>
+                    </div>
+                    <div class="modules__item">
+                        <img src="images/base-set.jpg" alt="" class="modules__item-img">
+                        <h3 class="modules__item-name">Курс <br>
+                            “Супер-Сет”</h3>
+                        <div class="modules__item-description">Курс для тех, кто хочет раз и&nbsp;навсегда разобраться
+                            с&nbsp;3
+                            основополагающими темами: артикли + падежи + склонение прилагательных.
+                        </div>
+                        <div class="modules__item-duration">4 видео-урока (45-90 мин каждый) + домашние задания с
+                            ключами
+                        </div>
+                        <div class="modules__item-level">Уровень А2-B1</div>
+                        <a href="#" class="modules__item-more">Узнать подробнее → </a>
+                    </div>
+                </div>
+                <div class="modules__all-btn-wrapper"><a href="#" class="modules__all-btn">Все курсы</a></div>
+            </div>
+        </div>
+    </section>
+    <section class="new">
+        <div class="container">
+            <div class="new__element">NEW!</div>
+        </div>
+        <div class="new__bg">
+            <div class="container">
+                <div class="new__bg-inner">
+                    <div class="new__left"></div>
+                    <div class="new__right">
+                        <div class="new__title">Старт новых потоков - 14 апреля!</div>
+                        <div class="new__buttons">
+                            <a href="#" class="new__btn">Грамматический&nbsp;курс для&nbsp;начинающих</a>
+                            <a href="#" class="new__btn">Разговорный&nbsp;курс для&nbsp;начинающих</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="free">
+        <div class="free__title">Бесплатные материалы</div>
+        <img src="images/student.jpg" alt="" class="free__image">
+        <div class="free__points">
+            <div class="free__pnt" style="background-image: url('../images/icons/online-video.svg')">Записи прямых
+                эфиров</div>
+            <div class="free__pnt" style="background-image: url('../images/icons/online-class.svg')">Вебинары</div>
+            <div class="free__pnt" style="background-image: url('../images/icons/download.svg')">Материалы для
+                скачивания</div>
+        </div>
+        <div class="free__btn-wrapper">
+            <a href="#" class="free__btn">Посмотреть все</a>
+        </div>
+    </section>
+    <section class="gift">
+        <div class="container">
+            <div class="gift__left">
+                <h2 class="gift__text">Получите <strong>подарок</strong> за подписку на полезную рассылку от
+                    <strong>HiKorean</strong>
+                </h2>
+            </div>
+            <a href="#" class="gift__btn">Подписаться</a>
+            <div class="gift__right"></div>
+        </div>
+    </section>
+    <section class="insta">
+        <div class="insta__text">Подписывайтесь на&nbsp;мой профиль в&nbsp;Instagram</div>
+        <div class="insta__btn-wrapper">
+            <a href="#" class="insta__btn">Перейти в&nbsp;профиль @HiKorean в&nbsp;Instagram</a>
+        </div>
+    </section>
+    <section class="youtube">
+        <div class="container">
+            <div class="youtube__inner">
+                <div class="youtube__left">
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div class="youtube__video-name">Плюсы жизни в Корее</div>
+                    <div class="youtube__video-description">Это видео наполнено позитивом. Я&nbsp;расскажу вам
+                        о&nbsp;моих плюсах жизни в&nbsp;Корее и&nbsp;почему я&nbsp;считаю Корею очень крутой страной для
+                        жизни.</div>
+                </div>
+                <div class="youtube__right">
+                    <div class="youtube__title">Канал Антона&nbsp;Разрухина на&nbsp;Youtube
+                    <a href="#" class="youtube__btn button">Перейти&nbsp;на&nbsp;Youtube</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="write">
+        <div class="container">
+            <div class="write__inner">
+                <div class="write__title">НАПИШИТЕ НАМ</div>
+                <div class="write__text">если возникнут какие-либо вопросы</div>
+                <div class="write__main">
+                    <div class="write__left">+56 729 567 214 129 (WhatsApp) <br>
+                        E-mail: info@hikorean.kp</div>
+                    <div class="write__right">
+                        <form class="write__form" action="" method="">
+                            <ul>
+                                <li>
+                                    <input class="write__form-item" placeholder="Ваш e-mail" type="email" id="mail"
+                                        name="user_mail">
+                                </li>
+                                <li>
+                                    <input class="write__form-item" placeholder="Ваше имя" type="text" id="name"
+                                        name="user_name">
+                                </li>
+                                <li>
+                                    <textarea class="write__form-item" rows="1" placeholder="Ваше сообщение" id="msg"
+                                        name="user_message"></textarea>
+                                </li>
+                                <li>
+                                    <button class="write__btn" type="submit">Отправить</button>
+                                </li>
+                            </ul>
+                        </form>
+                        <div class="write__rights">Нажимая на&nbsp;кнопку, вы даете согласие на&nbsp;обработку персональных данных
+                        </div>
+                    </div>
+                </div>
+                <img src="images/payments.png" alt="" class="write__methods">
+            </div>
+        </div>
+    </section>
+    <script src="js/main.min.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__left">
+                    <div class="footer__name">© HiKorean, 2021</div>
+                    <div class="footer__file">
+                        Разрухин Антон Иванович <br>
+                        Регистрационный номер: 51824512143 <br>
+                        <a href="#">Договор-оферта</a>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__contacts-title">Контакты:</div>
+                    <a href="mailto: info@hikorean.kp" class="footer__contacts-email">E-mail: info@hikorean.kp</a>
+                    <a href="tel: +56 729 567 214 129" class="footer__contacts-phone">WhatsApp: +56&nbsp;729&nbsp;567&nbsp;214&nbsp;129</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <a href="" class="footer__media-icon"><img src="images/icons/telegram.svg" alt=""></a>
+                <a href="" class="footer__media-icon"><img src="images/icons/youtube.svg" alt=""></a>
+                <a href="" class="footer__media-icon"><img src="images/icons/instagram.svg" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
